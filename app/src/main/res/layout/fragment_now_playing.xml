@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.top_rated.TopRatedFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nowPlayingRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/txtNowPlayingLoadError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Something Went Wrong"
+        app:layout_constraintTop_toBottomOf="@id/nowPlayingRecyclerView"
+        app:layout_constraintLeft_toLeftOf="@id/nowPlayingRecyclerView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
